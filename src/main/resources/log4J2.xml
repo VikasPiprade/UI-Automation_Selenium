@@ -5,11 +5,30 @@
         <Console name="ConsoleAppender" target="SYSTEM_OUT">
             <PatternLayout pattern="[%t] %d{HH:mm:ss,SSS} %-5p [%c{1}] %m%n"/>
         </Console>
+        
+        <!-- All logs file -->
+        <File name="FileAppender" fileName="logs/skill-pipeline.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c{1}] %m%n"/>
+        </File>
+        
+        <!-- Skills-only logs file -->
+        <File name="SkillFileAppender" fileName="logs/skills-execution.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%marker] [%c{1}] %m%n"/>
+        </File>
     </Appenders>
 
     <Loggers>
+        <!-- Log skills to both console and dedicated skill log file -->
+        <Logger name="com.swag.labs.Skills" level="INFO" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="SkillFileAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+        
+        <!-- Root logger -->
         <Root level="TRACE">
             <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
         </Root>
     </Loggers>
 

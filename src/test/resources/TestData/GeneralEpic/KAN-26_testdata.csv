@@ -1,0 +1,2 @@
+testScenario,input,expectedOutput,description
+Scenario1,sample_input,expected_output,Verify that Implement and validate login functionality with email validation for Saucedemo application works as expected

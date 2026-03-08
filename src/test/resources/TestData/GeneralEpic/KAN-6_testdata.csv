@@ -1,0 +1,2 @@
+testScenario,input,expectedOutput,description
+Scenario1,sample_input,expected_output,Verify that Homepage Navigation Test works as expected
