@@ -118,7 +118,7 @@ When you run the full pipeline, you'll see output like:
 [SKILL 4/4] Pull Request Creation
 ────────────────────────────────────────────────────────────────────────────
 [SKILL] PullRequestCreatorSkill - ========== Starting PR Creation for KAN-1 ==========
-✅ PR created successfully: https://github.com/avdhutssh/UI-Automation_Selenium/pull/42
+✅ PR created successfully: https://github.com/VikasPiprade/UI-Automation_Selenium/pull/42
 ✅ Confluence page updated
 
 ╔════════════════════════════════════════════════════════════════════════╗
@@ -130,7 +130,7 @@ EXECUTION SUMMARY
 Jira Ticket: KAN-1
   Feasibility: PASS (Score: 0.85)
   Test Generated: Test_GeneralEpic_KAN1 (Path: src/test/java/com/swag/labs/Tests/Test_GeneralEpic_KAN1.java)
-  PR Created: #42 - https://github.com/avdhutssh/UI-Automation_Selenium/pull/42
+  PR Created: #42 - https://github.com/VikasPiprade/UI-Automation_Selenium/pull/42
 ════════════════════════════════════════════════════════════════════════════
 ```
 
